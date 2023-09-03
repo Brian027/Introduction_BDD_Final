@@ -1,0 +1,311 @@
+/**************************************************/
+/*--------------- ACCOUNT PAGE ---------------*/
+/**************************************************/
+
+/* Container */
+
+.containerAccount {
+    max-width: 1170px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'geologica';
+}
+
+/* SideBar */
+
+.containerAccount .sideBarAccount {
+    width: 25%;
+    float: left;
+    margin-top: 20px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.containerAccount .sideBarAccount i {
+    margin-right: 15px;
+}
+
+/* Entête SideBar */
+
+.containerAccount .sideBarAccount .titleAccount {
+    vertical-align: top;
+    background: #FAFBFB;
+    padding: 20px;
+    border-bottom: 1px solid #F0F1F2;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.containerAccount .sideBarAccount .titleAccount .avatarAccount {
+    width: 30px;
+    height: 30px;
+}
+
+.containerAccount .sideBarAccount .titleAccount .avatarAccount img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/* Link SideBar */
+
+.containerAccount .sideBarAccount .menuAccount {
+    background-color: #fff;
+    color: #999;
+}
+
+.containerAccount .sideBarAccount .menuAccount ul li {
+    padding: 20px;
+    border-bottom: 1px solid #F0F1F2;
+}
+
+.containerAccount .sideBarAccount .menuAccount ul li:last-child {
+    border-bottom: none;
+}
+
+.containerAccount .sideBarAccount .menuAccount ul li a {
+    padding: 10px 0;
+    color: #999;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.containerAccount .sideBarAccount .menuAccount ul li a.active {
+    color: #000;
+    font-weight: 600;
+}
+
+.containerAccount .sideBarAccount .menuAccount ul li i {
+    color: #000;
+}
+
+/* Content */
+
+.containerAccount .sectionAccount {
+    width: 70%;
+    margin-top: 20px;
+    vertical-align: top;
+    display: inline-block;
+    background: #FFF;
+    margin-left: 3%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.containerAccount .sectionAccount .titleContentAccount {
+    background: #FAFBFB;
+    padding: 20px;
+    border-bottom: 1px solid #F0F1F2;
+    display: flex;
+    align-items: center;
+}
+
+.containerAccount .sectionAccount .contentAccount {
+    padding: 20px;
+}
+
+/* Formulaire */
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountLeft {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountLeft .formAccountGroup {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountLeft .formAccountGroup label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountLeft .formAccountGroup input {
+    padding: 10px 15px;
+    border: 1px solid #F0F1F2;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountRight {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountRight .imgAccount {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountRight .imgAccount img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountRight .formAccountGroup {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountRight .formAccountGroup label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountRight .formAccountGroup input {
+    padding: 10px 15px;
+    border: 1px solid #F0F1F2;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountRight .formAccountGroup input[type="file"] {
+    padding: 10px 15px;
+    border: 1px solid #F0F1F2;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+    background: #FAFBFB;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccount .formAccountRight .formAccountGroup select {
+    padding: 10px 15px;
+    border: 1px solid #F0F1F2;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+
+/* Submit Btn */
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccountGroup {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .contentFormAccount form .formAccountGroup button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background: #14a44d;
+    cursor: pointer;
+}
+
+/* Address Page */
+
+.containerAccount .sectionAccount .contentAccount .listingAddress {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address {
+    width: 300px;
+    border: 1px solid #F0F1F2;
+    background-color: #FAFBFB;
+    border-radius: 6px;
+    padding: 20px;
+    transition: border .15s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address:hover {
+    border-color: #14a44d;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressContent {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressContent .addressTitle h3 strong {
+    font-size: 1.35rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressContent .addressTitle h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #191919;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressContent .addressTitle h3.notAddress {
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressContent .addressInfo {
+    font-size: 14px;
+    font-weight: 500;
+    color: #383838;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressContent .addressInfo a.addAddress {
+    border: 1px solid #cfcfcf;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressContent .addressInfo .cpVille {
+    display: flex;
+    gap: .5rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressActions {
+    display: flex;
+    gap: .5rem;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressActions a {
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressActions a.edit {
+    color: #14a44d;
+}
+
+.containerAccount .sectionAccount .contentAccount .listingAddress .address .addressActions a.delete {
+    color: #ff0000;
+}

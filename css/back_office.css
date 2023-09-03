@@ -1,0 +1,1145 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+    font-weight: 600;
+}
+
+html, body{
+    font-family: 'geologica';
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+
+/* CART SHOP STYLE */
+
+.cartShop {
+    position: relative;
+}
+
+button.cart {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+button.cart i {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.cartShop span {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+/* LOGIN START */
+
+.login-container {
+    width: 100%;
+    height: 86.1%;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    background-image: radial-gradient(circle at 47% 14%, rgba(205, 205, 205,0.04) 0%, rgba(205, 205, 205,0.04) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 35% 12%, rgba(215, 215, 215,0.04) 0%, rgba(215, 215, 215,0.04) 4%,transparent 4%, transparent 100%),radial-gradient(circle at 1% 35%, rgba(24, 24, 24,0.04) 0%, rgba(24, 24, 24,0.04) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 21% 1%, rgba(0, 0, 0,0.04) 0%, rgba(0, 0, 0,0.04) 26%,transparent 26%, transparent 100%),radial-gradient(circle at 23% 82%, rgba(249, 249, 249,0.04) 0%, rgba(249, 249, 249,0.04) 60%,transparent 60%, transparent 100%),radial-gradient(circle at 11% 54%, rgba(251, 251, 251,0.04) 0%, rgba(251, 251, 251,0.04) 23%,transparent 23%, transparent 100%),radial-gradient(circle at 69% 68%, rgba(234, 234, 234,0.04) 0%, rgba(234, 234, 234,0.04) 10%,transparent 10%, transparent 100%),linear-gradient(90deg, rgb(228, 46, 222),rgb(63, 61, 215));
+}
+
+.login-container .login-form {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgb(185 188 191 / 20%) 0px 0px 24px 5px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-container .login-form .circle {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.login-container .login-form .circle h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+}
+
+.login-container .login-form .circle i {
+    font-size: .85rem;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.login-container .login-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-container .login-form form .circle i {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.login-container .login-form form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-container .login-form form .form-group label {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'geologica';
+}
+
+.login-container .login-form form .form-group input {
+    padding: 10px 16px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+}
+
+.login-container .login-form form .form-group button {
+    padding: 10px 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color .15s ease-in-out;
+}
+
+.login-container .login-form form .form-group button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.login-container .login-form form .existingAccount p ,  
+.login-container .login-form form .nonExistentAccount p {
+    font-size: .7rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    color: #000;
+}
+
+.login-container .login-form form .existingAccount a:hover, .login-container .login-form form .nonExistentAccount a:hover {
+    text-decoration: underline;
+}
+
+/* header.bo */
+
+header.bo{
+    padding: 4rem 0;
+}
+
+/* NAVBAR TOP */
+
+header.bo .navTop {
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: height .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header.bo .navTop.sticky {
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 80px;
+}
+
+header.bo .navTop .logo {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header.bo .navTop .menu ul {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+header.bo .navTop ul li a {
+    color: #000;
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+header.bo .navTop ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s ease-in-out;
+}
+
+header.bo .navTop ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+header.bo .navTop .groupBtn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header.bo .navTop .groupBtn .search form {
+    position: relative;
+    display: flex;
+}
+
+header.bo .navTop .groupBtn .search form .formField input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #f2f2f2;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    font-family: flexo;
+}
+
+header.bo .navTop .groupBtn .search form button {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: .5rem .8rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+header.bo .navTop .groupBtn .user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header.bo .navTop .groupBtn button {
+    background-color: transparent;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+header.bo .navTop .groupBtn button a {
+    color: #000;
+    font-size: 1.6rem;
+    display: flex;
+}
+
+
+header.bo .navTop .groupBtn .user .cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header.bo .navTop .groupBtn .user .cover span {
+    background-color: #fff;
+    box-shadow: 0 0 18px 4px #e7e7e7c9;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -35px;
+    transform: scale(0);
+    transition: transform .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header.bo .navTop .groupBtn .user .cover span.active {
+    transform: scale(1);
+}
+
+header.bo .navTop .groupBtn .user .cover span a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header.bo .navTop .groupBtn .user .cover a i {
+    color: #191919;
+    font-size: 1.2rem;
+}
+
+header.bo .navTop .groupBtn .user .cover span a i {
+    color: #191919;
+    font-size: 1rem;
+}
+
+header.bo .navTop .groupBtn .user .cover img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header.bo .navTop .cartShop{
+    display: flex;
+    align-items: center;
+}
+
+header.bo .navTop .cartShop .shopFrontOffice button {
+    background-color: transparent;
+    border: none;
+    padding: .5rem .8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header.bo .navTop .cartShop button a {
+    display: flex;
+}
+
+header.bo .navTop .cartShop button a i {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* SIDE NAV LATERAL */
+
+header.bo .sideNav {
+    position: fixed;
+    top: 50%;
+    left: 75px;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 400px;
+    background-color: #000000;
+    border-radius: 9999px;
+    z-index: 100;
+}
+
+header.bo .sideNav .navLateral {
+    height: 100%;
+    width: 100%;
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav button {
+    background-color: #f8f7fa;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav button i {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.5rem;
+    transition: transform .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav button span {
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    background-color: #f8f7fa;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 80px;
+    font-size: .9rem;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    font-weight: 600;
+    transform: translate(50%, -50%);
+    z-index: -1;
+    padding-left: 1rem;
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav .shopDropdown {
+    position: relative;
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav .shopDropdown .dropdownMenu {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 65%;
+    transform: translate(0, -50%);
+    gap: 1rem;
+    background-color: #000;
+    padding: 1rem;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav .shopDropdown.active .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav .shopDropdown .dropdownMenu .close {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    transform: translate(50%, -50%);
+    background-color: #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav .shopDropdown .dropdownMenu .close i {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav .shopDropdown .dropdownMenu .close:hover i {
+    transform: rotate(90deg);
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav .shopDropdown .dropdownMenu a:nth-child(2) {
+    margin-left: 1.5rem;
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav .shopDropdown .dropdownMenu a {
+    color: #fafafa;
+    font-size: .9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #232323;
+    transition: background-color .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav .shopDropdown .dropdownMenu a:hover {
+    background-color: #1ed760;
+}
+
+header.bo .sideNav .navLateral .buttonGroupNav button:hover i {
+    transform: scale(1.1);
+}
+
+/* GALLERY PHOTO */
+
+header.bo .containerUsers {
+    max-width: 1300px;
+    width: 100%;
+    margin: 4rem auto;
+}
+
+ .container {
+    max-width: 1300px;
+    width: 80%;
+    margin: 8rem auto;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+ .container .titlePage {
+    position: absolute;
+    top: 0;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    z-index: 1;
+    color: #fafafa;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+    font-family: 'geologica', sans-serif;
+}
+
+ .container .gridContainer {
+    max-width: 1300px;
+    width: 80%;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    position: relative;
+}
+
+ .gridContainer .gridItem {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+ .gridContainer .gridItem .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: #151515d6;
+    transition: opacity .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+ .gridContainer .gridItem:hover .overlay {
+    opacity: 1;
+}
+
+ .gridContainer .gridItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+ .gridContainer .gridItem .bodyContent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    background-image: linear-gradient(45deg, rgba(33,33,33, 0.93) 0%,transparent 73%),repeating-linear-gradient(90deg, rgba(127, 127, 127,0.1) 0px, rgba(127, 127, 127,0.1) 1px,transparent 1px, transparent 17px),repeating-linear-gradient(0deg, rgba(127, 127, 127,0.1) 0px, rgba(127, 127, 127,0.1) 1px,transparent 1px, transparent 17px),linear-gradient(0deg, rgba(33,33,33, 0.93),rgba(33,33,33, 0.93));
+    padding: 1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transform: translateY(65%);
+    transition: transform .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+ .gridContainer .gridItem:hover .bodyContent {
+    transform: translateY(0);
+}
+
+ .gridContainer .gridItem .bodyContent .title h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 'Geologica';
+    margin-bottom: .5rem;
+}
+
+ .gridContainer .gridItem .bodyContent .description p {
+    color: #ffffffe1;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+}
+
+ .gridContainer .gridItem .bodyContent .auteur p {
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    margin-top: .5rem;
+}
+
+.gridContainer .gridItem .bodyContent .callToAction {
+    display: flex;
+    gap: .5rem;
+}
+
+.gridContainer .gridItem .bodyContent .callToAction a {
+    color: #eee;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+/* Listing TABLE */
+.blurBG {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(0px);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: backdrop-filter .7s cubic-bezier(0.19, 1, 0.22, 1), opacity .7s cubic-bezier(0.19, 1, 0.22, 1), visibility .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.blurBG.active {
+    backdrop-filter: blur(5px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.listingUser, .manageCommande {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.manageCommande .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    max-width: 1300px;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.manageCommande .row .containerStatus form .formField .inputGroup button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: .5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.listingUser h1:not(.cmdTitle) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 'Geologica';
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.manageCommande .row .cmdTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 'Geologica';
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: rgb(185 188 191 / 20%) 0px 0px 24px 5px;
+    border-radius: 5px;
+    font-family: 'geologica', sans-serif;
+}
+
+table thead th {
+    padding: 10px 16px;
+    text-align: left;
+    background-color: #f3f3f5;
+}
+
+table tbody tr td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+table tbody tr td img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+table tbody tr td.action {
+    display: flex;
+    gap: .5rem;
+}
+
+table tbody tr td.action a {
+    margin-right: 10px;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+table tbody tr td.action a:first-child i.bx.bx-edit {
+    color: rgb(0, 190, 57);
+}
+
+table tbody tr td.action a:last-child i {
+    margin-right: 0;
+    color: #f00;
+}
+
+/* tFoot */
+
+table tfoot {
+    background-color: #fff;
+}
+
+table tfoot tr {
+    max-width: 250px;
+    width: 100%;
+}
+
+table tfoot tr td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+table tfoot tr td:first-child {
+    text-align: right;
+}
+
+/* ADD USER */
+
+button.btnAddUser {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    z-index: 1000;
+}
+
+.manageUser {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manageUser .wrapper {
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgb(185 188 191 / 20%) 0px 0px 24px 5px;
+    padding: 2rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform .25s cubic-bezier(0.19, 1, 0.22, 1), opacity .25s cubic-bezier(0.19, 1, 0.22, 1), visibility .25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.manageUser .wrapper.productWrapper {
+    width: 80%;
+    height: 90%;
+    max-width: 1300px;
+    max-height: 800px;
+}
+
+.manageUser .wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.manageUser .wrapper.editUser.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.manageUser .wrapper .close {
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.manageUser .wrapper h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    margin-bottom: 2rem;
+}
+
+.manageUser .wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.manageUser .wrapper form .containerForm {
+    display: flex;
+    gap: 1rem;
+    height: 400px;
+}
+
+.manageUser .wrapper form .containerForm .rightContent, .manageUser .wrapper form .containerForm .leftContent {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+    padding: 1rem 0;
+}
+
+.manageUser .wrapper form .containerForm .rightContent::-webkit-scrollbar, .manageUser .wrapper form .containerForm .leftContent::-webkit-scrollbar {
+    width: 5px;
+    background-color: #cecece;
+    border-radius: 5px;
+}
+
+.manageUser .wrapper form .containerForm .rightContent::-webkit-scrollbar-thumb, .manageUser .wrapper form .containerForm .leftContent::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 5px;
+}
+
+.manageUser .wrapper form .containerForm .leftContent .infoProduct {
+    background-color: #cecece;
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 95%;
+}
+
+.manageUser .wrapper form .containerForm .leftContent .infoProduct h3 {
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.manageUser .wrapper form .containerForm .leftContent .infoProduct h3 span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.manageUser .wrapper form .formField {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.manageUser .wrapper form .containerForm .rightContent .formField, .manageUser .wrapper form .containerForm .leftContent .formField {
+    width: 95%;
+}
+
+.manageUser .wrapper form .containerForm .rightContent .formField h3 {
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    color: #000;
+    margin-bottom: 1rem;
+    background-color: #cecece;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.manageUser .wrapper form .containerForm .rightContent .formField h3 span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    margin-bottom: 1rem;
+}
+
+.manageUser .wrapper form .formField label {
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+}
+
+.manageUser .wrapper form .formField input {
+    padding: 10px 16px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+}
+
+.manageUser .wrapper form .formField input[type="file"]::-webkit-file-upload-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    cursor: pointer;
+}
+
+.manageUser .wrapper form .formField input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.manageUser .wrapper form .formField input[type="file"] {
+    padding: 10px 16px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+}
+
+.manageUser .wrapper form .formField input[type="number"]::-webkit-inner-spin-button,
+.manageUser .wrapper form .formField input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.manageUser .wrapper form .formField textarea {
+    padding: 10px 16px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    resize: none;
+    min-height: 100px;
+}
+
+.manageUser .wrapper form .formField textarea::-webkit-scrollbar {
+    width: 5px;
+    background-color: #cecece;
+    border-radius: 5px;
+}
+
+.manageUser .wrapper form .formField textarea::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 5px;
+}
+
+form .formField select {
+    padding: 10px 16px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+}
+
+form .formField input[type="submit"]{
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    cursor: pointer;
+}
+
+.manageUser .wrapper form .containerForm .leftContent .infoProduct .listInfoProduct ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.manageUser .wrapper form .containerForm .leftContent .infoProduct .listInfoProduct ul li {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.manageUser .wrapper form .containerForm .leftContent .infoProduct .listInfoProduct select {
+    padding: 10px 16px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    outline: none;
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+}
+
+.manageUser .wrapper form .formField:last-child {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.manageUser .wrapper form .formField button {
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Geologica';
+    cursor: pointer;
+}
+
+.manageUser .wrapper form .formField .imageProduct {
+    width: 300px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.manageUser .wrapper form .formField .imageProduct .imageProductItem {
+    position: relative;
+    width: 100%;
+}
+
+.manageUser .wrapper form .formField .imageProduct .imageProductItem img {
+    border-radius: 6px;
+    width: 100%;
+}
+
+.manageUser .wrapper form .formField .imageProduct .imageProductItem .imageProductItemAction {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.manageUser .wrapper form .formField .imageProduct .imageProductItem .imageProductItemAction a {
+    color: #f8f9fa;
+}
+
+.manageUser .wrapper form .formField .imageProduct .imageProductItem .imageProductItemAction a i {
+    font-size: 1rem;
+}
